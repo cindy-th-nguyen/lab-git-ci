@@ -23,13 +23,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: actions/setup-java@v2
-        with:
-          distribution: "adopt"
-          java-version: "11"
-          check-latest: true
-      - run: java -cp "../../src/main/java/com/mycompany/app/App.java" App
-
       - name: Set up JDK 11
         uses: actions/setup-java@v2
         with:
