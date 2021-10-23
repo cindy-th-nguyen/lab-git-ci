@@ -37,6 +37,12 @@ jobs:
         with:
           files: target/surefire-reports/**/*.xml
 
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: target/ # or path/to/artifact
+
+
   sonar:
     name: Test - SonarCloud Scan
     runs-on: ubuntu-latest
