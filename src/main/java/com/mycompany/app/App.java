@@ -2,6 +2,7 @@ package com.mycompany.app;
 
 /**
  * Hello world!
+ * Test pipeline
  */
 public class App
 {
