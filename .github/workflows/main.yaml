@@ -82,5 +82,5 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          load: true
-          tags: cindy-th-nguyen/lab-git-ci:latest
+          push: true
+          tags: cindydocker97/lab-git-ci:latest
